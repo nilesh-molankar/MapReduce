@@ -5,12 +5,18 @@ import java.io.PrintWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.sql.Timestamp;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 public class Run {
 	
 	public static void main(String args[]) throws IOException {
 		int count = 0;
-		PrintWriter logWriter = new PrintWriter("RunLog.txt", "UTF-8");
+		java.util.Date date= new java.util.Date();
+		Timestamp currentTime = new Timestamp(date.getTime());
+		String postFix = new SimpleDateFormat("MMddyy_HHmmssSSS").format(currentTime);
+		PrintWriter logWriter = new PrintWriter("RunLog_" + postFix + ".log", "UTF-8");
 		logWriter.println("*****************************************LOG FILE FOR RUN.CLASS*****************************************");
 		
 			for (String filename: args) {
