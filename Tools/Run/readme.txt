@@ -8,8 +8,9 @@ Instructions:
 
 1. Save Run.java to desired directory (you can keep it wherever you like)
 
-2. To use, compile first by running "javac Run.java" from command line in the directory 
-where you saved Rn.java previously
+2. To use, you can can just call the Run.class file included in the Tools folder. 
+Alternatively, you can compile first by running "javac Run.java" from command line in 
+the directory where you saved Rn.java previously. 
 
 3. Now execute the class file by running "java Run <file_name.txt>... <file_name.txt>
 You can pass as many file names as you like to the Run tool, but you must pass at least 
