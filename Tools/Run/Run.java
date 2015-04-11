@@ -1,3 +1,9 @@
+//*****************************************************
+// Created by Adam Wanninger, wanninaj@miamioh.edu
+// Downloaded from github.com/adam-wanninger
+// GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007
+//*****************************************************
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.FileReader;
