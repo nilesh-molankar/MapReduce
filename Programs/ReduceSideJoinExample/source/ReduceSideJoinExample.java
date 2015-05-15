@@ -71,14 +71,14 @@ public class ReduceSideJoinExample {
 			//loop through the words read in from file
 			//to ensure that none match the key
 			//if no match then write to file
+			boolean write = true;
 			for(String word : wordsToExclude) {
 				if(word.equalsIgnoreCase(key.toString())) {
-					continue; //do not write word to output
-				} else {
-					context.write(key, result); 
-				}
+					write = false;//do not write word to output
+				} 
 			}
-
+			if(write == true)
+				context.write(key, result);
 		}
 	}
 	//
