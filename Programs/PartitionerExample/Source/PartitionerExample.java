@@ -79,11 +79,7 @@ public class PartitionerExample {
 			for (IntWritable value : values) {
 				sum += value.get();
 			}
-			context.write(key, new IntWritable(sum));
-
-			for (IntWritable val : values) {
-				sum += val.get();
-			}
+		
 			result.set(sum);
 			context.write(key, result);
 		}
@@ -94,7 +90,7 @@ public class PartitionerExample {
 	public static void main(String[] args) throws Exception {
 		Configuration conf = new Configuration();
 		Job job = Job.getInstance(conf, "MapReduce Partitioner Example");
-		job.setNumReduceTasks(6); //will run with 5 reducers
+		job.setNumReduceTasks(6); //will run with 6 reducers
 		job.setJarByClass(PartitionerExample.class);
 		job.setMapperClass(TokenizerMapper.class);
 		job.setPartitionerClass(TokenizerPartitioner.class);
