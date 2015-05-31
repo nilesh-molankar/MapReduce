@@ -5,3 +5,5 @@ that uses the Faker gem to generate fake data. In this case,
 an IPV4 address and a time-stamp has been generated.
 
 The Ruby script is also included in the source folder. 
+
+*NOTE: THIS PROGRAM IS CURRENTLY IN DEVELOPMENT, AND IS NOT COMPLETE

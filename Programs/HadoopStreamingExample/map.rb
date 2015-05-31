@@ -5,7 +5,7 @@ ARGF.each do |line|
    # remove any newline
    line = line.chomp
 
-   # do nothing will lines shorter than 2 characters
+   # do nothing with lines shorter than 2 characters
    next if ! line || line.length < 2
 
    # grab our key as the two-character prefix (lower-cased)
