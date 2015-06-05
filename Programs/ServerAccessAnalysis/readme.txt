@@ -10,6 +10,5 @@ in the reduce phase, since we only want to divide the
 records of our input file into smaller, more manageable files,
 for each month of 2014.
 
-The Ruby script is also included in the source folder. 
-
-*NOTE: THIS PROGRAM IS CURRENTLY IN DEVELOPMENT, AND IS NOT COMPLETE
+The Ruby script which I used to generate a fake server log for 
+testing is also included in the source folder. 
