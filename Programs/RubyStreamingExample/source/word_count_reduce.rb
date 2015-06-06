@@ -1,11 +1,10 @@
-# Ruby code for reduce.rb
 
 prev_key = nil
 key_total = 0
 
 ARGF.each do |line|
 
-   # remove any newline
+   # truncate newline
    line = line.chomp
 
    # split key and value on tab character
